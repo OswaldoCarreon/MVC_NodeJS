@@ -11,9 +11,11 @@ app.set('views', 'public/views');
 app.set('view engine', 'hbs');
 
 
-app.use('/app', appRouter);
 
-app.get('/', (req,res) => { res.send('Home page') });
+
+
+app.use('/app', appRouter);
+app.get('/', (req,res) => { res.render('Home') });
 
 
 
