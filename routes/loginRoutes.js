@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 
 
-// ******* /app/
+// ******* /login
 
 router.get('/', (req,res) => {
     var vars = {
         titulo: "App"
     }
 
-    res.render('app' , vars);
+    res.render('loginView');
 
 });
 
